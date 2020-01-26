@@ -1,0 +1,53 @@
+body {
+    text-align: left;
+    font-size: 30;
+    font-family: Georgia;
+    font-style: italic;
+    
+  }
+  
+  h1 {
+    color: orange;
+    background-color: black;
+    font-size: 40;
+    text-align: left;
+    font-style: italic;
+    font-family: cursive;
+    
+  }
+  
+  p{
+     color: rgb(0,0,0); 
+     font-size: 30;
+     text-align: left;
+     font-family: fantasy; 
+     font-style: italic;
+  }
+  ul
+  {
+    font-size: 40;
+    color: black;
+    list-style-type: square;
+    
+  }
+  ol
+  {
+    font-family: Georgia;
+    color: orange;
+    background-color: grey;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
