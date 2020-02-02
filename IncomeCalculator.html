@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Income calculator</h1>
+    <h2 id = "income" class = "income"> This is your income</h2> 
+    <h2 id ="change" class = "money" >Your Current Bank Account</h2> 
+    <button style = "button" onclick="myAwesomeFunction2()">Add income</button><br><br>
+    <button style = "button" onclick="myAwesomeFunction()">Calculate monthly debt</button><br><br>
+    <h2 class = "moneyHeader"> Money you owe </h2>
+    <p id ="rent" class = "moneyLost" > Rent </p>
+    <p id ="car" class = "moneyLost" > Car </p>
+    <p id ="food" class = "moneyLost" > Food </p>
+    <p id ="entertainment" class = "moneyLost" > Entertainment </p>
+    <h2 id ="result" class = "moneyFinal" > Money you have left </h2>
+    
+<script>
+    //Varibles
+    var incomeMoney = 0, bankAccount = 0, debt = 0, rent = 1200, car = 200, food = 200, entertainment = 200;//income varible
+// income varibles
+  
+  
+  debt = rent + car + food + entertainment;//calcualte debt
+  
+    //Function
+    function myAwesomeFunction() //this declares my function
+    { 
+      
+      document.getElementById("rent").innerHTML = "Rent Per Month = $" + rent + " Total rent: $" + rent;//write rent to screen
+      document.getElementById("car").innerHTML = "Car Per Month = $" + car + " Total car: $" + car;//write car to screen
+      document.getElementById("food").innerHTML = "Food Per Month = $" + food + " Total food: $" + food;//write food to screen
+      document.getElementById("entertainment").innerHTML = "Entertainment Per Month = $" + Entertainment + " Total entertainment: $" + entertainment;//write entertainment to screen
+      document.getElementById("result").innerHTML = "This is how much you have left: $" + (bankAccount - debt);//write new balance
+      bankAccount = bankAccount - debt;//Debt eequation
+      document.getElementById("change").innerHTML = "Bank account: $" + bankAccount;//print new bank account number
+      rent = rent + 1200;
+      car = car + 200;
+      food = food + 200;
+      entertainment = entertainment + 200;
+      
+    }
+  
+  function myAwesomeFunction2()// This is where we do math
+  {
+    incomeMoney = incomeMoney + 4800;//calclate new gross income
+    bankAccount = bankAccount + 4800;//calculate new bank account number
+    document.getElementById("change").innerHTML = "Bank account: $" + bankAccount; //print bank account to screen
+    document.getElementById("income").innerHTML = "This is your total income: $" + incomeMoney//print total income to screen
+  }
+</script>
+</body>
+</html>                                                                                                                                                                                                                                                           
